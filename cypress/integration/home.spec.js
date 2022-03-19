@@ -7,8 +7,9 @@
 
 describe('home pag ', ()=>{
     it('app deve estar online', ()=>{
-        cy.viewport(1440,900)
-        cy.visit ('https://buger-eats.vercel.app/')
+        // este código se tornou desnecessário ao longo do desenvolvimento pois o view port já esta definido no cypress.json cy.viewport(1440,900)
+        // a URL padrão também esta definida no cypress.json sendo assim só é preciso definir a url com barra pois a URL absoluta ja esta definida
+        cy.visit ('/')
         cy.get('#page-home main h1').should('have.text', 'Seja um parceiro entregador pela Buger Eats')
     })
     
