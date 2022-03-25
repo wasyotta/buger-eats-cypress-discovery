@@ -13,7 +13,7 @@
 // Ao utilizar * nós usamos para montar um localizador css que localiza o elemento que termina com algo
 
 import signupPage from '../pages/SignupPage'
-import signupFactory from '../Factories/SignupFactory'
+import signupFactory from '../factories/SignupFactory'
 
 
 describe('Signup', () => {
@@ -179,7 +179,7 @@ describe('Signup', () => {
             { field: 'postalcode', output: 'É necessário informar o CEP' },
             { field: 'number', output: 'É necessário informar o número do endereço' },
             { field: 'deliver_method', output: 'Selecione o método de entrega' },
-            { field: 'cnh', output: 'Adicione uma foto da sua CNH' },
+            { field: 'cnh', output: 'Adicione uma foto da sua CNH' }    
         ]
 
         before(function () {
